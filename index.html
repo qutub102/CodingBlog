@@ -54,12 +54,16 @@
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
             <div class="mx-2">
-                <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
-                <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+                <button class="btn btn-danger"  data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger" id="sigup" data-toggle="modal" data-target="#signupModal">SignUp</button>
             </div>
         </div>
     </nav>
-
+    <script>
+      function login(){
+        alert('Site Under Construction')
+      }
+    </script>
  
   
   <!-- Login Modal -->
@@ -87,7 +91,7 @@
                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
               </form>
         </div>
         <div class="modal-footer">
@@ -124,7 +128,7 @@
                   <input type="password" class="form-control" id="cexampleInputPassword1">
                 </div>
                  
-                <button type="submit" class="btn btn-primary">Creat Account</button>
+                <button type="submit" onclick="login()" class="btn btn-primary">Creat Account</button>
               </form>
         </div>
         <div class="modal-footer">
